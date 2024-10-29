@@ -2,7 +2,6 @@ import './App.css';
 import SectionOne from './Components/SectionOne';
 import SectionThree from './Components/SectionThree';
 import SectionTwo from './Components/SectionTwo';
-import background from './assets/photo-collage.png';
 
 function App() {
   return (
