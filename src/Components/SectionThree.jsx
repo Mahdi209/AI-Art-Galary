@@ -5,7 +5,7 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 export default function SectionThree() {
   return (
     <div className="w-[22rem] lg:w-[40rem] h-screen flex flex-col justify-center">
-      <h2 className="text-center text-5xl lg:text-8xl mb-10   text-white">
+      <h2 className="text-center text-5xl lg:text-8xl mb-10 mt-24   text-white">
         ادوات انشاء الصور
       </h2>
       <ul className="lg:w-full  text-xl  lg:text-3xl text-center  bg-opacity-60 border border-white space-y-3  rounded-lg p-5 text-white">
