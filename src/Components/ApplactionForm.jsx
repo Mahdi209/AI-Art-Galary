@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function ApplicationForm() {
   return (
     <div className="w-[22rem] lg:w-[40rem] h-screen flex flex-col justify-center">
