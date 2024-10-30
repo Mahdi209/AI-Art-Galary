@@ -1,16 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lalezar&display=swap");
 body {
-  padding: 16px;
-  --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
   direction: rtl;
   text-align: right;
-  background-image: url(/src/assets/00122-26-696281709.png);
-  background-size: cover;
-  /* background-repeat: no-repeat; */
 
-  backdrop-filter: blur(10px);
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+
   background-position: center;
-}
-.text-shadow {
-  text-shadow: 4px 4px 8px rgba(255, 255, 255, 0.7);
+  font-family: "Lalezar", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }

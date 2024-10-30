@@ -1,17 +1,17 @@
 import React from "react";
-import list, { editList } from "../AiList";
+import { editList } from "../AiList";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 
-export default function SectionThree() {
+export default function SectionFour() {
   return (
-    <div className="w-[22rem] lg:w-[40rem] h-screen flex flex-col justify-center">
+    <div className="w-[22rem] lg:w-[40rem] h-screen flex flex-col justify-center ">
       <h2 className="text-center text-5xl lg:text-8xl mb-10   text-white">
-        ادوات انشاء الصور
+        ادوات رفع جودة الصور
       </h2>
       <ul className="lg:w-full  text-xl  lg:text-3xl text-center  bg-opacity-60 border border-white space-y-3  rounded-lg p-5 text-white">
-        {list.map((item, index) => (
+        {editList.map((item, index) => (
           <li
-            className="bg-slate-700 bg-opacity-70  flex flex-row-reverse justify-between items-center  rounded-md p-2 "
+            className="bg-slate-700 bg-opacity-70   flex flex-row-reverse justify-between items-center  rounded-md p-2 "
             key={index}
           >
             <div className="flex flex-row-reverse">
@@ -22,7 +22,7 @@ export default function SectionThree() {
                 height="50px"
                 className="rounded-2xl  mr-5"
               />
-              <div className="flex items-center space-x-0">{item.name}</div>
+              <div className="flex items-center">{item.name}</div>
             </div>
             <a href={item.href} target="_blank">
               <FaArrowAltCircleRight className="w-10 h-10" />
