@@ -24,7 +24,7 @@ export default function SectionFour() {
               />
               <div className="flex items-center">{item.name}</div>
             </div>
-            <a href={item.href} target="_blank">
+            <a href={item.href} target="_blank" rel="noreferrer">
               <FaArrowAltCircleRight className="w-10 h-10" />
             </a>
           </li>
