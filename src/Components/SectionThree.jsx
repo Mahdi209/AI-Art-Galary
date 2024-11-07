@@ -4,28 +4,54 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 
 export default function SectionThree() {
   return (
-    <div className="w-[22rem] lg:w-[40rem] h-screen flex flex-col justify-center">
-      <h2 className="text-center text-5xl lg:text-8xl mb-10 mt-24   text-white">
+    <div
+      className="w-[90%] sm:w-[85%] md:w-[75%] lg:w-[65%] xl:w-[55%] mx-auto 
+      min-h-screen flex flex-col justify-center items-center py-10"
+    >
+      <h2
+        className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold 
+        text-center mb-10 text-white text-shadow-lg
+        animate-[fadeIn_1s_ease-out] transform hover:scale-105 transition-transform"
+      >
         ادوات انشاء الصور
       </h2>
-      <ul className="lg:w-full  text-xl  lg:text-3xl text-center  bg-opacity-60 border border-white space-y-3  rounded-lg p-5 text-white">
+
+      <ul
+        className="w-full text-lg sm:text-xl md:text-2xl lg:text-3xl text-center space-y-4 
+        bg-slate-800/20 backdrop-blur-sm border-2 border-white/30 rounded-xl p-6 
+        text-white shadow-2xl hover:border-white/50 transition-all duration-500"
+      >
         {list.map((item, index) => (
           <li
-            className="bg-slate-700 bg-opacity-70  flex flex-row-reverse justify-between items-center  rounded-md p-2 "
             key={index}
+            className="bg-slate-700/80 backdrop-blur-sm rounded-lg p-4 
+              flex flex-row-reverse justify-between items-center
+              hover:bg-slate-600/80 transform hover:scale-102 
+              transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20"
           >
-            <div className="flex flex-row-reverse">
+            <div className="flex flex-row-reverse items-center gap-4">
               <img
                 src={item.icon}
                 alt={item.name}
-                width="50px"
-                height="50px"
-                className="rounded-2xl  mr-5"
+                className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 
+                  rounded-xl object-cover transform hover:scale-110 transition-transform"
               />
-              <div className="flex items-center space-x-0">{item.name}</div>
+              <span className="text-white/90 hover:text-white transition-colors">
+                {item.name}
+              </span>
             </div>
-            <a href={item.href} target="_blank" rel="noreferrer">
-              <FaArrowAltCircleRight className="w-10 h-10" />
+
+            <a
+              href={item.href}
+              target="_blank"
+              rel="noreferrer"
+              className="group transform transition-transform hover:scale-110"
+            >
+              <FaArrowAltCircleRight
+                className="w-8 h-8 sm:w-10 sm:h-10 
+                text-purple-400 group-hover:text-purple-300 
+                transition-colors duration-300"
+              />
             </a>
           </li>
         ))}

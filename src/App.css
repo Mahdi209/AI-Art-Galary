@@ -1,13 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lalezar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
+
 body {
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-  direction: rtl;
-  text-align: right;
-
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-
-  background-position: center;
-  font-family: "Lalezar", system-ui;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Almarai", sans-serif;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  min-height: 100vh;
+  background-attachment: fixed;
 }
